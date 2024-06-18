@@ -45,7 +45,7 @@ if (isset($_POST['login']))
 {
 	$user = $_POST['email'];
     $pass = $_POST['password'];
-    $con = new mysqli('localhost','root','','store');
+    $con = new mysqli('localhost','id22334366_store','Damfodum@79','id22334366_store');
 
     $result = $con->query("select * from users where email='$user' AND password='$pass'");
     if($result->num_rows>0)
