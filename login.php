@@ -54,7 +54,7 @@ if (isset($_POST['login']))
     	$data = $result->fetch_assoc();
     	$_SESSION['userId']=$data['id'];
       $_SESSION['bill'] = array();
-    	header('location:index.php');
+    	header('location:main.php');
       }
     else
     {
